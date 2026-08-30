@@ -1,48 +1,59 @@
-Shopping Cart
+Online Shopping Cart System
+
 Description
-This project contains a Python program that implements a simple Shopping Cart system. It allows users to add products to a cart, manage the items, and calculate the total price.
+
+This project contains a Python script that implements an Online Shopping Cart System. The system allows users to add products to a shopping cart, remove products, change product quantities, view the cart, calculate the subtotal, apply a discount, calculate GST, and generate the final bill.
 
 Algorithm
-The script manages the cart using basic data structures . The step-by-step algorithm is as follows:
 
-Initialize: Create an empty list or dictionary to represent the shopping cart.
-Add Items: When a user adds an item, capture the item's name, price, and quantity. Append this data as a record to the cart structure.
-View Cart: Iterate through the cart data structure and display each item's name, price, quantity, and subtotal.
-Calculate Total:
-Initialize a total_cost variable to 0.
-Loop through each item currently in the cart.
-Multiply the item's price by its quantity and add it to total_cost.
-Output: Return or print the final total_cost and a summary of the cart.
-Input && Output
-ONLINE SHOPPING CART SYSTEM
+The script uses functions and a dictionary to manage products and their quantities. The step-by-step algorithm is as follows:
 
-Display Products
-Add Product
-Remove Product
-Display Cart
-Generate Final Bill
-Exit
-2
+Initialize Cart: Create an empty cart to store product names, prices, and quantities.
 
-Available Products - Smartwatch - ₹ 8000 Bluetooth Speaker - ₹ 3500 Tablet - ₹ 25000 Power Bank - ₹ 1200 Earbuds - ₹ 4500
-ONLINE SHOPPING CART SYSTEM
+Add Product: Ask the user to enter the product name, price, and quantity.
 
-Display Products
-Add Product
-Remove Product
-Display Cart
-Generate Final Bill
-Exit
-7 Invalid choice! Please try again.
+Check Product: Check whether the product already exists in the cart. If it exists, increase its quantity. Otherwise, add the product as a new item.
 
-ONLINE SHOPPING CART SYSTEM
+Remove Product: Ask the user for the product name and remove the product from the cart if it exists.
 
-Display Products
-Add Product
-Remove Product
-Display Cart
-Generate Final Bill
-Exit
-4
+Change Quantity: Ask the user for the product name and the new quantity. Update the quantity of the selected product.
 
-Available Products - Smartwatch - ₹ 8000 Bluetooth Speaker - ₹ 3500 Tablet - ₹ 25000 Power Bank - ₹ 1200 Earbuds - ₹ 4500 2 Smartwatch added to cart.
+Display Cart: Display all products in the cart along with their prices, quantities, and individual amounts.
+
+Calculate Subtotal: Calculate the amount of every product using price multiplied by quantity and add all product amounts to obtain the subtotal.
+
+Apply Discount: If the subtotal is Rs.1000 or more, apply a 10% discount.
+
+Calculate GST: Calculate 18% GST on the amount remaining after the discount.
+
+Calculate Final Amount: Add the GST to the taxable amount to calculate the final bill amount.
+
+Input and Output
+
+Input
+
+Enter choice: 1
+
+Enter product name: Keyboard
+
+Enter product price: 850
+
+Enter quantity: 2
+
+Output
+
+2 x Keyboard added to cart.
+
+Enter choice: 5
+
+Output
+
+Product             Price       Quantity  Amount
+------------------------------------------------------
+Keyboard            Rs.850.00   2         Rs.1700.00
+
+Subtotal       : Rs.1700.00
+Discount       : Rs.170.00
+Taxable Amount : Rs.1530.00
+GST (18%)      : Rs.275.40
+Final Amount   : Rs.1805.40
