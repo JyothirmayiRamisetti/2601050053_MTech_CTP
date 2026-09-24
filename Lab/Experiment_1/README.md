@@ -1,23 +1,25 @@
-EXPERIMENT 1 — MERGE SORT
+# Experiment 1 — Merge Sort
 
-The workbook specifies the aim as implementing a Divide-and-Conquer merge sort and calculating its time complexity.
+## Aim
 
-Aim
+To implement the **Merge Sort algorithm using Divide and Conquer** and calculate its time complexity.
 
-To implement the Merge Sort algorithm using Divide and Conquer and calculate its time complexity.
+## Algorithm / Procedure
 
-Algorithm / Procedure
-Start with an unsorted list of elements.
-If the list contains one or zero elements, return it because it is already sorted.
-Find the middle position of the list.
-Divide the list into two halves.
-Recursively apply Merge Sort to the left half.
-Recursively apply Merge Sort to the right half.
-Merge the two sorted halves.
-Compare elements from both halves and place the smaller element into the result.
-Continue until all elements are merged.
-Display the sorted list.
-Program
+1. Start with an unsorted list of elements.
+2. If the list contains one or zero elements, return it because it is already sorted.
+3. Find the middle position of the list.
+4. Divide the list into two halves.
+5. Recursively apply Merge Sort to the left half.
+6. Recursively apply Merge Sort to the right half.
+7. Merge the two sorted halves.
+8. Compare elements from both halves and place the smaller element into the result.
+9. Continue until all elements are merged.
+10. Display the sorted list.
+
+## Program
+
+```python
 def merge_sort(arr):
     # Base condition
     if len(arr) <= 1:
@@ -61,25 +63,38 @@ print("Original list:", arr)
 sorted_arr = merge_sort(arr)
 
 print("Sorted list:", sorted_arr)
-Sample Input
+```
+
+## Sample Input
+
+```text
 Enter elements separated by space: 38 27 43 3 9 82 10
-Sample Output
+```
+
+## Sample Output
+
+```text
 Original list: [38, 27, 43, 3, 9, 82, 10]
 Sorted list: [3, 9, 10, 27, 38, 43, 82]
-Time Complexity
+```
+
+## Time Complexity
 
 Merge Sort divides the array into two halves recursively.
 
-Best Case: O(n log n)
-Average Case: O(n log n)
-Worst Case: O(n log n)
+| Case         | Time Complexity |
+| ------------ | --------------- |
+| Best Case    | O(n log n)      |
+| Average Case | O(n log n)      |
+| Worst Case   | O(n log n)      |
 
-Space Complexity: O(n)
+**Space Complexity:** O(n)
 
-Inference & Analysis
+## Inference & Analysis
 
-The Merge Sort algorithm successfully sorts the given elements using the Divide-and-Conquer technique. The array is repeatedly divided into smaller subarrays and then merged in sorted order. Its time complexity is O(n log n) for best, average and worst cases.
+The Merge Sort algorithm successfully sorts the given elements using the **Divide-and-Conquer technique**. The array is repeatedly divided into smaller subarrays and then merged in sorted order. Its time complexity is **O(n log n)** for the best, average, and worst cases.
 
-Result
+## Result
 
-Thus, the Merge Sort algorithm was successfully implemented using Divide and Conquer.
+Thus, the **Merge Sort algorithm was successfully implemented using Divide and Conquer**.
+
